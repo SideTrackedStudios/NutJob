@@ -206,7 +206,7 @@ MonoBehaviour:
   moveSpeed: 3
   jumpHeight: 5
   groundCheck: {fileID: 1555739295}
-  groundCheckRadius: 1
+  groundCheckRadius: .0500000007
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -245,7 +245,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427386754}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: .0500000007
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_IsKinematic: 0

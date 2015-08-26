@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour {
 		}
 		
 		//set the moveVel to 0 every frame for more control
-		//moveVelocity = 0f;
+		moveVelocity = 0f;
 
 		//TODO: change these for controller support
 		//move right
