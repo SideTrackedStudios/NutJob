@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundCheckRadius;
 	public LayerMask whatIsGround;
-	private bool grounded;
+	public bool grounded;
 	private bool doubleJumped;
 	private float moveVelocity;
 
@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		anim = GetComponent<Animator> ();
-		rb2D = GetComponent<Rigidbody2D> ();
-		ren = GetComponent<Renderer> ();
+		//anim = GetComponent<Animator> ();
+		//rb2D = GetComponent<Rigidbody2D> ();
+		//ren = GetComponent<Renderer> ();
 	}
 	
 	void FixedUpdate ()
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour {
 		if (grounded)
 			doubleJumped = false;
 		
-		anim.SetBool ("Grounded", grounded);
+		//anim.SetBool ("Grounded", grounded);
 		
 		//jumpy jumpy
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) 
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour {
 		}
 		
 		//set the moveVel to 0 every frame for more control
-		moveVelocity = 0f;
+		//moveVelocity = 0f;
 
 		//TODO: change these for controller support
 		//move right
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 		
 		GetComponent<Rigidbody2D>().velocity = new Vector3 (moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 		
-		anim.SetFloat ("Speed", Mathf.Abs (GetComponent<Rigidbody2D> ().velocity.x));
+		//anim.SetFloat ("Speed", Mathf.Abs (GetComponent<Rigidbody2D> ().velocity.x));
 		
 		if (GetComponent < Rigidbody2D> ().velocity.x > 0)
 			transform.localScale = new Vector3 (1f, 1f, 1f);
