@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour {
 
 	void Start ()
 	{
-		cameraHolder = Camera.main.transform.parent.transform;
+		//cameraHolder = Camera.main.transform.parent.transform;
 	}
 
 	void FixedUpdate ()

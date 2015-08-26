@@ -295,6 +295,7 @@ GameObject:
   - 114: {fileID: 427386757}
   - 61: {fileID: 427386756}
   - 50: {fileID: 427386760}
+  - 58: {fileID: 427386758}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -325,9 +326,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -.0500000007, y: .230000004}
   serializedVersion: 2
-  m_Size: {x: 1.25, y: 2}
+  m_Size: {x: .839999974, y: 1.46000004}
 --- !u!114 &427386757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed568bbd75b3ba419e28bc4064b991c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 4
   jumpHeight: 5
   groundCheck: {fileID: 1555739295}
   groundCheckRadius: .0500000007
@@ -347,6 +348,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   grounded: 0
+--- !u!58 &427386758
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427386754}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0900000036, y: -.540000021}
+  serializedVersion: 2
+  m_Radius: .360000014
 --- !u!212 &427386759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -388,7 +402,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &592019344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1698,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.44000006
   m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
@@ -1721,7 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 1902388016}
-  cameraSpeed: 5
+  cameraSpeed: 7
   player: {fileID: 427386755}
   cameraMovementType: 2
 --- !u!1 &1974724794
