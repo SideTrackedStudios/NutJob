@@ -32,10 +32,10 @@ public class CameraMovement : MonoBehaviour {
 			cameraHolder.transform.position = Vector3.MoveTowards (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
 			break;
 		case CameraMovementType.AccelDecel:
-			cameraHolder.transform.position = InterpilationLibrary.AccelDecelInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed);
+			cameraHolder.transform.position = InterpolationLibrary.AccelDecelInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed);
 			break;
 		case CameraMovementType.Accerleration:
-			cameraHolder.transform.position = InterpilationLibrary.AccelerationInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed, 1);
+			cameraHolder.transform.position = InterpolationLibrary.AccelerationInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed, 1);
 			break;
 			
 		}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InterpilationLibrary : MonoBehaviour {
+public class InterpolationLibrary : MonoBehaviour {
 
 	public static Vector3 AccelDecelInterpolation(Vector3 start, Vector3 end, float t)
 	{
