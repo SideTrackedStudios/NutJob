@@ -1,9 +1,35 @@
 fileFormatVersion: 2
 guid: e704213b2675f7b4c89ddb285df65ca3
-timeCreated: 1440707879
+timeCreated: 1440717425
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: static_objects_0
+    21300002: static_objects_1
+    21300004: static_objects_2
+    21300006: static_objects_3
+    21300008: static_objects_4
+    21300010: static_objects_5
+    21300012: static_objects_6
+    21300014: static_objects_7
+    21300016: static_objects_8
+    21300018: static_objects_9
+    21300020: static_objects_10
+    21300022: static_objects_11
+    21300024: static_objects_12
+    21300026: static_objects_13
+    21300028: static_objects_14
+    21300030: static_objects_15
+    21300032: static_objects_16
+    21300034: static_objects_17
+    21300036: static_objects_18
+    21300038: static_objects_19
+    21300040: static_objects_20
+    21300042: static_objects_21
+    21300044: static_objects_22
+    21300046: static_objects_23
+    21300048: static_objects_24
+    21300050: static_objects_25
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +56,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +74,267 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: static_objects_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 644
+        width: 273
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 786
+        width: 340
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 818
+        width: 405
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_3
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 953
+        width: 57
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 648
+        width: 205
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 684
+        width: 80
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_6
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 635
+        width: 367
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_7
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 710
+        width: 90
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 385
+        width: 436
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 449
+        width: 173
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 479
+        width: 317
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_11
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 611
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_12
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 250
+        width: 172
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_13
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 304
+        width: 254
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_14
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 412
+        width: 158
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 168
+        width: 201
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 171
+        width: 213
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 155
+        width: 245
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_18
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 251
+        width: 215
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 9
+        width: 170
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_20
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2
+        width: 244
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 51
+        width: 188
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_22
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 147
+        width: 205
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_23
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 33
+        width: 135
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_24
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 33
+        width: 134
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static_objects_25
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 72
+        width: 158
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

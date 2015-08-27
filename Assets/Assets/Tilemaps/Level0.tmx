@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="256" tileheight="256" nextobjectid="1">
+ <tileset firstgid="1" name="Ground" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="35">
+  <image source="../Sprites/Environment/Tiles/ground_tiles.png" width="1808" height="1292"/>
+ </tileset>
+ <tileset firstgid="36" name="RockWater" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="21">
+  <image source="../Sprites/Environment/Tiles/rock_water_tiles.png" width="1808" height="776"/>
+ </tileset>
+ <tileset firstgid="57" name="Tree" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="18">
+  <image source="../Sprites/Environment/Tiles/tree_tiles.png" width="1550" height="776"/>
+ </tileset>
+ <tileset firstgid="75" name="TileableObjects" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="7">
+  <image source="../Sprites/Environment/Tileable/tileable_objects.png" width="1808" height="260"/>
+ </tileset>
+ <tileset firstgid="82" name="StaticObjects" tilewidth="1" tileheight="1" tilecount="0"/>
+ <layer name="Back" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt06ENADAMA8GsVVqU/ScqDiuLwd0EL1muAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+He3AxjOdgCDf2SxRxZ7ZOntAAb/AAAAyPMAWkMBzA==
+  </data>
+ </layer>
+ <layer name="Collision" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2M1Kw0AUBtDBWovVhbiQurB2040bH0AExa0IfSMf3QkmdBiT/sUYbM6Bj4g2w2VuJ7c1BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA4zGLOYn5KFP8fNZrRcN2H3OaJf7us8+a+GmyR09eY56/rzvfM2S3MZdlFnvcN+mkGtooZkk1W2bBbOlbPl/Gyd+K59RTmbeYl78ujlrvfRfwz1XzZPFL6+lHN6rvIml2mRdN/biJucvWO4+5al3pMIzi59VlvKYZbXh9Xf/SzLO1qkyT1wzRtn1L96/Yq2VY7+Wmfox83zhI/r6fhvr37Ti7bxXzULNe1d95VwUfubrnUHoGpqH5HDw2rNdBmYNR7F/TmaibE8Xnr23PNQ6Xno90RqQ9ys/HquHqbLTX9LzKe7TYca1uqhyO67CeFfk1TfV/qovynqbe0c4XmhwZcA==
+  </data>
+ </layer>
+ <layer name="AboveCollision" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6AHtH8eY3w6SEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Mu0AwAAAACcthEaAE0=
+  </data>
+ </layer>
+ <layer name="AbovePlayer" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+  </data>
+ </layer>
+</map>
