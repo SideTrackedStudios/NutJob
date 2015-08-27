@@ -283,8 +283,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427386754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.236000001, y: -.925000012, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalPosition: {x: -.144999996, y: -1.02400005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1555739295}
   m_Father: {fileID: 0}
@@ -299,9 +299,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0054795146, y: .354656935}
+  m_Offset: {x: .0110653937, y: .151980162}
   serializedVersion: 2
-  m_Size: {x: 1.49890435, y: 2.38602734}
+  m_Size: {x: .770923078, y: 1.36850834}
 --- !u!114 &427386757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +319,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967039
   CanMoveInAir: 1
+  isGrounded: 0
 --- !u!58 &427386758
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -329,9 +330,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0399999991, y: -.879999995}
+  m_Offset: {x: -.0399999991, y: -.5}
   serializedVersion: 2
-  m_Radius: .649999976
+  m_Radius: .349999994
 --- !u!212 &427386759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1140,7 +1141,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555739294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00999999978, y: -1.54999995, z: 0}
+  m_LocalPosition: {x: 0, y: -.879999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427386755}

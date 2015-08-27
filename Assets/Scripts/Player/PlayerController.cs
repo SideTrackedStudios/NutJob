@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float Speed = 10f;
-    public float JumpVelocity = 10f;
+    public float Speed = 5f;
+    public float JumpVelocity = 5f;
     public LayerMask playerMask;
     public bool CanMoveInAir = true;
     Transform myTransform;
@@ -12,8 +12,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myBody;
     Animator myAnimator;
 
-    bool isGrounded = false;
-    
+    public bool isGrounded = false;
+    bool isJumping = false;
+
+    float jumpTime = 0f;
+    float jumpDelay = .5f;
 
     // Use this for initialization
     void Start()
@@ -34,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.Linecast(myTransform.position, groundCheck.position, playerMask);
-
+        myAnimator.SetBool("grounded",isGrounded);
         //move the bastard
         Move(Input.GetAxisRaw("Horizontal"));
 
@@ -75,6 +78,11 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         if (isGrounded)
+        {
             myBody.velocity += JumpVelocity * Vector2.up;
+            myAnimator.SetTrigger("jump");
+        }
+        myAnimator.SetBool("grounded", isGrounded);
+                            
     }
 }
