@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
 
         if (onLadder)
         {
+            isGrounded = false;
             myBody.gravityScale = 0f;
             climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
             myBody.velocity = new Vector2(myBody.velocity.x, climbVelocity);
@@ -95,12 +96,25 @@ public class PlayerController : MonoBehaviour
     }
     public void Jump()
     {
-        if (isGrounded)
+        if (isGrounded && !onLadder)
         {
             myBody.velocity += JumpVelocity * Vector2.up;
             myAnimator.SetTrigger("jump");
-        }
-        myAnimator.SetBool("grounded", isGrounded);
-                            
+            myAnimator.SetBool("grounded", isGrounded);
+        }                        
+    }
+
+    public void ladderClimb(Vector2 ladderPos)
+    {
+        transform.position = new Vector2(ladderPos.x, myBody.position.y);
+        onLadder = true;
+        myAnimator.SetBool("onLadder", true);
+    }
+
+    public void ladderExit()
+    {
+        onLadder = false;
+        myBody.velocity = new Vector2(0f, 0f);
+        myAnimator.SetBool("onLadder", false);
     }
 }
