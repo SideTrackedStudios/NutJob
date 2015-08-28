@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myBody;
     Animator myAnimator;
 
+    public bool onLadder;
+    public float climbSpeed;
+    private float gravityStore;
+    private float climbVelocity;
+
     public bool isGrounded = false;
     bool isJumping = false;
 
@@ -25,6 +30,8 @@ public class PlayerController : MonoBehaviour
         myTransform = GetComponent<Transform>();
         groundCheck = GameObject.Find(this.name + "/GroundCheck").transform;
         myAnimator = GetComponent<Animator>();
+
+        gravityStore = myBody.gravityScale;
     }
 
     void FixedUpdate()
@@ -44,6 +51,17 @@ public class PlayerController : MonoBehaviour
         //do we need to jump
         if (Input.GetButtonDown("Jump"))
             Jump();
+
+        if (onLadder)
+        {
+            myBody.gravityScale = 0f;
+            climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+            myBody.velocity = new Vector2(myBody.velocity.x, climbVelocity);
+        }
+        if (!onLadder)
+        {
+            myBody.gravityScale = gravityStore;
+        }
     }
 
     public void Move(float horizonatalInput)
