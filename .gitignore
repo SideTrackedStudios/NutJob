@@ -3,7 +3,13 @@
 /*/
 
 # Inverse ignore some stuff
-!/Assets/
+#Anytime you add a new folder to Assets 
+#you must add it to the list!
+!/Assets/Assets
+!/Assets/Prefabs
+!/Assets/Scenes
+!/Assets/Scripts
+!/Assets/Tiled2Unity
 !/ProjectSettings/
 !.gitignore
 
@@ -16,5 +22,3 @@ ehthumbs.db
 Thumbs.db
 $RECYCLE.BIN/
 Desktop.ini
-Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
-Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
