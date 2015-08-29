@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="256" tileheight="256" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="25" tilewidth="256" tileheight="256" nextobjectid="1">
  <tileset firstgid="1" name="Ground" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="35">
   <image source="../Sprites/Environment/Tiles/ground_tiles.png" width="1808" height="1292"/>
  </tileset>
@@ -12,25 +12,27 @@
  <tileset firstgid="75" name="TileableObjects" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="7">
   <image source="../Sprites/Environment/Tileable/tileable_objects.png" width="1808" height="260"/>
  </tileset>
- <tileset firstgid="82" name="StaticObjects" tilewidth="1" tileheight="1" tilecount="0"/>
- <layer name="Back" width="100" height="100">
+ <tileset firstgid="82" name="Collision" tilewidth="256" tileheight="256" tilecount="1">
+  <image source="../Sprites/Collision.png" width="256" height="256"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="-0.5" width="255.636" height="256.25"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Background" width="50" height="25">
   <data encoding="base64" compression="zlib">
-   eJzt06ENADAMA8GsVVqU/ScqDiuLwd0EL1muAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+He3AxjOdgCDf2SxRxZ7ZOntAAb/AAAAyPMAWkMBzA==
+   eJzt0bENACAMA8GsRUvF/hMxAk2kIOtugrdcBQDwtqcDmqzpgCYpf9jxlzMd0CTlDwDyXBjcAcw=
   </data>
  </layer>
- <layer name="Collision" width="100" height="100">
+ <layer name="Ground" width="50" height="25">
   <data encoding="base64" compression="zlib">
-   eJzt2M1Kw0AUBtDBWovVhbiQurB2040bH0AExa0IfSMf3QkmdBiT/sUYbM6Bj4g2w2VuJ7c1BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA4zGLOYn5KFP8fNZrRcN2H3OaJf7us8+a+GmyR09eY56/rzvfM2S3MZdlFnvcN+mkGtooZkk1W2bBbOlbPl/Gyd+K59RTmbeYl78ujlrvfRfwz1XzZPFL6+lHN6rvIml2mRdN/biJucvWO4+5al3pMIzi59VlvKYZbXh9Xf/SzLO1qkyT1wzRtn1L96/Yq2VY7+Wmfox83zhI/r6fhvr37Ti7bxXzULNe1d95VwUfubrnUHoGpqH5HDw2rNdBmYNR7F/TmaibE8Xnr23PNQ6Xno90RqQ9ys/HquHqbLTX9LzKe7TYca1uqhyO67CeFfk1TfV/qovynqbe0c4XmhwZcA==
+   eJztlskKwjAQhoO1FqMH8SD1YO3FpxBB8S70jXx0JzSDw5ClWxqUfPATaZtZM61CJBKJRCIxLSVoAXppqd+rqBEN4wxaMsG1d8yYpqTokcsDdGvXznuGcARtteoe+4og0cRBzQrOTil+c3YUfH5yck+dp6vWE3SfO7g/AeeljhxHKPBbQjVmHg6gE7O3Bu3Gheklg/fmBVaqzPG8KW+qitlCSfJMH3z+qF+pfWEMrjyymb+XvM5SmOuUs32NxR7WpQoSrR3TeaE1l8Jdd5O9qWPs6tfWA9McqPeZ7/zFgPaDzgDNjfejsayxeoG+Xb3A3OqOtsJE6WcvvrPAVyr8H7XRe2w5x+IDiNEYMw==
   </data>
  </layer>
- <layer name="AboveCollision" width="100" height="100">
+ <layer name="Collision" width="50" height="25" opacity="0.5">
   <data encoding="base64" compression="zlib">
-   eJztzgENAAAIA6AHtH8eY3w6SEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Mu0AwAAAACcthEaAE0=
-  </data>
- </layer>
- <layer name="AbovePlayer" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+   eJztlEsKACAIRDtj9z9Mm7b2fSjKPHARRDY62poQQgjB0mdY5yx0I6pwo8VL/2utq/Yls+dWs1N5rjypXj96B1vvee+1Xc7VP0+D+N9vLm9f0vWJmi+6x1H74VYH7WsK2lNRkPORQcfp/SgGvNE3aw==
   </data>
  </layer>
 </map>
