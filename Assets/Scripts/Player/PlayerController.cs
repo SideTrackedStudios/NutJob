@@ -26,8 +26,7 @@ public class PlayerController : MonoBehaviour
         myTransform = GetComponent<Transform>();
         groundCheck = GameObject.Find(this.name + "/GroundCheck").transform;
         myAnimator = GetComponent<Animator>();
-
-        gravityStore = myBody.gravityScale;
+        setGravity(myBody.gravityScale);
     }
 
     void FixedUpdate()
@@ -116,6 +115,11 @@ public class PlayerController : MonoBehaviour
         
 		myBody.velocity = new Vector2(0f, 0f);
         myAnimator.SetBool("onLadder", false);
+    }
+
+    public void setGravity(float gravityScale)
+    {
+        gravityStore = gravityScale;
     }
 
 	public enum PlayerState {
