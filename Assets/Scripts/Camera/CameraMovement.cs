@@ -25,27 +25,30 @@ public class CameraMovement : MonoBehaviour {
 	void CameraMove ()
 	{
 		switch (cameraMovementType) {
-		case CameraMovementType.Lerp:
-			cameraHolder.transform.position = Vector3.Lerp (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
-			break;
-		case CameraMovementType.MoveTowards:
-			cameraHolder.transform.position = Vector3.MoveTowards (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
-			break;
-		case CameraMovementType.AccelDecel:
-			cameraHolder.transform.position = InterpolationLibrary.AccelDecelInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed);
-			break;
-		case CameraMovementType.Accerleration:
-			cameraHolder.transform.position = InterpolationLibrary.AccelerationInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed, 1);
-			break;
-			
+			case CameraMovementType.AccelDecel:
+				cameraHolder.transform.position = InterpolationLibrary.AccelDecelInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed);
+				break;
+			case CameraMovementType.Acceleration:
+				cameraHolder.transform.position = InterpolationLibrary.AccelerationInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed, 1);
+				break;
+			case CameraMovementType.Lerp:
+				cameraHolder.transform.position = Vector3.Lerp (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
+				break;
+			case CameraMovementType.MoveTowards:
+				cameraHolder.transform.position = Vector3.MoveTowards (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
+				break;
+			case CameraMovementType.Stopped:
+			default:
+				break;
 		}
 	}
 
 	public enum CameraMovementType
 	{
+		AccelDecel,
+		Acceleration,
 		Lerp,
 		MoveTowards,
-		AccelDecel,
-		Accerleration
+		Stopped,
 	}
 }

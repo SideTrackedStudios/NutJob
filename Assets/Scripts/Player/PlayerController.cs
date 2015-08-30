@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics2D.Linecast(myTransform.position, groundCheck.position, playerMask);
         myAnimator.SetBool("grounded",isGrounded);
+
         //move the bastard
         Move(Input.GetAxisRaw("Horizontal"));
 
@@ -55,7 +56,7 @@ public class PlayerController : MonoBehaviour
             climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
             myBody.velocity = new Vector2(myBody.velocity.x, climbVelocity);
         }
-        if (!onLadder)
+        else
         {
             myBody.gravityScale = gravityStore;
         }
@@ -69,7 +70,6 @@ public class PlayerController : MonoBehaviour
             return;
         
         Vector2 moveVelocity = myBody.velocity;
-
         moveVelocity.x = horizonatalInput * Speed;
         myBody.velocity = moveVelocity;
 
@@ -78,6 +78,7 @@ public class PlayerController : MonoBehaviour
 
         flip(horizonatalInput);
     }
+
     void flip(float horizonatalInput)
     {
         //moving right
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = theScale;
         }
     }
+
     public void Jump()
     {
         if (isGrounded && !onLadder)
@@ -102,15 +104,26 @@ public class PlayerController : MonoBehaviour
 
     public void ladderClimb(Vector2 ladderPos)
     {
-        transform.position = new Vector2(ladderPos.x, myBody.position.y);
-        onLadder = true;
+		onLadder = true;
+
+		transform.position = new Vector2(ladderPos.x, myBody.position.y);
         myAnimator.SetBool("onLadder", true);
     }
 
     public void ladderExit()
     {
         onLadder = false;
-        myBody.velocity = new Vector2(0f, 0f);
+        
+		myBody.velocity = new Vector2(0f, 0f);
         myAnimator.SetBool("onLadder", false);
     }
+
+	public enum PlayerState {
+		IDLE,
+		WALKING,
+		JUMPING,
+		CLIMBING,
+		SWIMMING,
+	}
+
 }
