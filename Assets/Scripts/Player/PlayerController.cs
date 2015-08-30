@@ -18,10 +18,6 @@ public class PlayerController : MonoBehaviour
     private float climbVelocity;
 
     public bool isGrounded = false;
-    bool isJumping = false;
-
-    float jumpTime = 0f;
-    float jumpDelay = .5f;
 
     // Use this for initialization
     void Start()
