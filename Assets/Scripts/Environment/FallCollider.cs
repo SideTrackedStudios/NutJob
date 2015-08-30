@@ -7,6 +7,7 @@ public class FallCollider : MonoBehaviour {
 	private GameObject mainCamera;
 	private CameraMovement movement;
 	private CameraMovement.CameraMovementType origCameraType;
+	private bool hasTriggered = false;
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
@@ -14,8 +15,11 @@ public class FallCollider : MonoBehaviour {
 		mainCamera = GameObject.Find("Main Camera");
 		movement = mainCamera.GetComponent<CameraMovement>();
 
-		if (collider.gameObject.Equals(player))
+		if (!hasTriggered && collider.gameObject.Equals(player))
 		{
+			Debug.Log("player fell to his demise");
+
+			hasTriggered = true;
 			StopCamera ();
 			Invoke ("ReloadLevel", 1.5f);  // delayed method call
 		}
