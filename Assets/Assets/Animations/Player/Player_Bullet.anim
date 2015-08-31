@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Player_Shoot_Crouch
+  m_Name: Player_Bullet
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,22 +18,18 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300130, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - time: .0625
-      value: {fileID: 21300132, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - time: .125
-      value: {fileID: 21300134, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - time: .1875
-      value: {fileID: 21300136, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - time: .25
-      value: {fileID: 21300138, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - time: .3125
-      value: {fileID: 21300140, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+      value: {fileID: 21300166, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - time: .0500000007
+      value: {fileID: 21300168, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - time: .100000001
+      value: {fileID: 21300170, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - time: .150000006
+      value: {fileID: 21300172, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 16
+  m_SampleRate: 20
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -47,16 +43,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300130, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - {fileID: 21300132, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - {fileID: 21300134, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - {fileID: 21300136, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - {fileID: 21300138, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
-    - {fileID: 21300140, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - {fileID: 21300166, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - {fileID: 21300168, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - {fileID: 21300170, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
+    - {fileID: 21300172, guid: 346ec66b61f99614d991a09609b4f729, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .375
+    m_StopTime: .200000003
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
