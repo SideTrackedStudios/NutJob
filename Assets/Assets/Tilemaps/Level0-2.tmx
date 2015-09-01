@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="100" tilewidth="64" tileheight="64" nextobjectid="1">
+ <tileset firstgid="1" name="ground_tiles" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="35">
+  <image source="../Sprites/Environment/Tiles/ground_tiles.png" width="1808" height="1292"/>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object id="0" x="0.125" y="0" width="255.625" height="255.75"/>
+   </objectgroup>
+  </tile>
+  <tile id="2">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0" width="255.455" height="255.913"/>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0909091" y="0.0909091" width="255.727" height="153.909"/>
+   </objectgroup>
+  </tile>
+  <tile id="4">
+   <objectgroup draworder="index">
+    <object id="0" x="0.25" y="0.25" width="255.125" height="150.75"/>
+   </objectgroup>
+  </tile>
+  <tile id="5">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0" width="255.909" height="255.909"/>
+   </objectgroup>
+  </tile>
+  <tile id="10">
+   <objectgroup draworder="index">
+    <object id="0" x="120.396" y="0.0625" width="135.479" height="164.885"/>
+   </objectgroup>
+  </tile>
+  <tile id="11">
+   <objectgroup draworder="index">
+    <object id="0" x="0.375" y="0.125" width="255.375" height="148.5"/>
+   </objectgroup>
+  </tile>
+  <tile id="23">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0" width="255.636" height="255.909"/>
+   </objectgroup>
+  </tile>
+  <tile id="24">
+   <objectgroup draworder="index">
+    <object id="0" x="0.363636" y="0.0909091" width="255.364" height="140.242"/>
+   </objectgroup>
+  </tile>
+  <tile id="30">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0.181818" width="255.545" height="153.818"/>
+   </objectgroup>
+  </tile>
+  <tile id="31">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0.0909091" width="255.068" height="140.909"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="36" name="rock_water_tiles" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="21">
+  <image source="../Sprites/Environment/Tiles/rock_water_tiles.png" width="1808" height="776"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0909091" y="0.0909091" width="255.636" height="255.727"/>
+   </objectgroup>
+  </tile>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="1.90909" width="255.545" height="255.636"/>
+   </objectgroup>
+  </tile>
+  <tile id="2">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0909091" y="0.0909091" width="255.636" height="255.727"/>
+   </objectgroup>
+  </tile>
+  <tile id="10">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0.181818" width="255.727" height="255.545"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="57" name="tree_tiles" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="18">
+  <image source="../Sprites/Environment/Tiles/tree_tiles.png" width="1550" height="776"/>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object id="0" x="16" y="0" width="239.727" height="100"/>
+   </objectgroup>
+  </tile>
+  <tile id="4">
+   <objectgroup draworder="index">
+    <object id="0" x="0.375" y="0.125" width="255.25" height="102.875"/>
+   </objectgroup>
+  </tile>
+  <tile id="8">
+   <objectgroup draworder="index">
+    <object id="0" x="15.2727" y="0" width="240.51" height="101.091"/>
+   </objectgroup>
+  </tile>
+  <tile id="14">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0869565" y="0.8125" width="255.726" height="97.1875"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="75" name="tileable_objects" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="7">
+  <image source="../Sprites/Environment/Tileable/tileable_objects.png" width="1808" height="260"/>
+ </tileset>
+ <layer name="Background" width="200" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2SEVADAMQ8HaGh2qf0VzMNiC3Cn4NC9VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkOdsBwAAADHudgAAABDD/gAAAKb0dgAAABDD/wEAAEyxPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+HgIRAYo=
+  </data>
+ </layer>
+ <layer name="Spikes" width="200" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2zERADAMAkAUxr+cGkjvmiVL/yfAAwkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACTV5G4DAAAAAAAAAAAAAADgH7d/ia8JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOypYX7pMHEAEnID9w==
+  </data>
+ </layer>
+ <layer name="Terrain" width="200" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt3TFPFEEYBuCNKCRKY6U2SIEmJEIlFIoFhfT8I3+6IcZ4+SB8fMzM3q73PN2bveOGI4F5d2a4aQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYJe8D3l/5ucDAAC742PILxvzq+YRAUt1HfKPkL9P06/NfDV0NAAA9x1sewAAAMDOOgj3R6HiQ8iHST4eNxQAAFao9bzJi14DAYCBbsL9t5/uxwFsRev5k+p5k6vw+z7uV//m7wEAAAAAAAArkp0fOZ5pHPzxLuS4nzLLb/sOBwAAVmU/7N+rzqdjnvvzdLLzVb3zUcifivl14+v7vCIAANZsL/SP1s/T2eswpoqTkKt9IOsHvR8f+0v2/Hh97vcX4KluG68D8Dy91xNG5zcL//8F2fuZrUdk16v9ofr83n1G/wAAYFN2P756/7v6+JjPQz5beN+I4vrMY9/vUXL972Oe+vXuVH8+vV8/5s8TAAD8U5kvP5Sr9+tjjn3jS2PfOAv59P7Xf/T1R+fq+zN3P+n9+icr648Ad+y9Ahgn9o9sPlydL8f5aTY/vxg8X836STW39pnW8x+j+0jr+or1D+B/9VBHcaYEIBf7R+t+q2rfyHJcD1nafqzLkEevj1T7Qet5kdb+o38A22bOD7As2fmP6n6d3vuVltY3oq8hj96vlfW93usZrf3F/isAADbF/tF6Xrx3ror7q7Z93mN0Hxl9fnzXz3/8Bk2rMh8=
+  </data>
+ </layer>
+ <layer name="Cave" width="200" height="100" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEKgDAQRcGcxM7GInj/09mGBRFcNJrMNOGn2vaVAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADCHNbkBAADOLGHX5N7SFwEAAKPI9sXV3u8cBQAADOPp5ogbAACY19v9oWcAAIBWDW/8/8oGAAD+q3dP6A8AAJiHPqCnA+TICx0=
+  </data>
+ </layer>
+</map>
