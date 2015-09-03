@@ -226,7 +226,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6093618, guid: ca9ea1a78c185be42a65f475f85b62d8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2c79f276e9c70c440b0a2f7f94bd043a, type: 2}
+    - target: {fileID: 2326116, guid: ca9ea1a78c185be42a65f475f85b62d8, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -81446013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096046, guid: ca9ea1a78c185be42a65f475f85b62d8, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 2c79f276e9c70c440b0a2f7f94bd043a, type: 2}
@@ -276,6 +284,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 704868894}
+    - target: {fileID: 11410056, guid: 22d36d9fcf34c364eac189323ede17f3, type: 2}
+      propertyPath: cameraMovementType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22d36d9fcf34c364eac189323ede17f3, type: 2}
   m_IsPrefabParent: 0

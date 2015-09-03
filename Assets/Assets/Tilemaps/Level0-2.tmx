@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="100" tilewidth="64" tileheight="64" nextobjectid="1">
+ <properties>
+  <property name="unity:scale" value="0.005"/>
+ </properties>
  <tileset firstgid="1" name="ground_tiles" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="35">
   <image source="../Sprites/Environment/Tiles/ground_tiles.png" width="1808" height="1292"/>
   <tile id="1">
    <objectgroup draworder="index">
-    <object id="0" x="0.125" y="0" width="255.625" height="255.75"/>
+    <object id="0" x="0.125" y="0" width="255.625" height="255.938"/>
    </objectgroup>
   </tile>
   <tile id="2">
@@ -24,7 +27,7 @@
   </tile>
   <tile id="5">
    <objectgroup draworder="index">
-    <object id="0" x="0" y="0" width="255.909" height="255.909"/>
+    <object id="0" x="0" y="0" width="255.909" height="255.938"/>
    </objectgroup>
   </tile>
   <tile id="10">
@@ -37,9 +40,23 @@
     <object id="0" x="0.375" y="0.125" width="255.375" height="148.5"/>
    </objectgroup>
   </tile>
+  <tile id="16">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="255.938">
+     <polygon points="0,0 0,-255.938 255.938,0"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="22">
+   <objectgroup draworder="index">
+    <object id="0" x="255.818" y="255.818">
+     <polygon points="0,0 0,-255.818 -255.818,0.0909091"/>
+    </object>
+   </objectgroup>
+  </tile>
   <tile id="23">
    <objectgroup draworder="index">
-    <object id="0" x="0.181818" y="0" width="255.636" height="255.909"/>
+    <object id="0" x="0.181818" y="0" width="255.636" height="255.989"/>
    </objectgroup>
   </tile>
   <tile id="24">
@@ -49,7 +66,9 @@
   </tile>
   <tile id="30">
    <objectgroup draworder="index">
-    <object id="0" x="0.181818" y="0.181818" width="255.545" height="153.818"/>
+    <object id="0" x="0.363636" y="21.6364">
+     <polyline points="32.1818,45.0909 147.273,146.545 222.909,144.545 255.273,133.091 255.273,-21.6364 -0.0909091,-21.5455 -0.363636,-0.363636 32.0909,45.0909"/>
+    </object>
    </objectgroup>
   </tile>
   <tile id="31">
@@ -88,14 +107,39 @@
     <object id="0" x="16" y="0" width="239.727" height="100"/>
    </objectgroup>
   </tile>
+  <tile id="2">
+   <objectgroup draworder="index">
+    <object id="0" x="0.181818" y="0" width="255.818" height="96.9091"/>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <objectgroup draworder="index">
+    <object id="0" x="0.015625" y="0" width="250.53" height="96.9091"/>
+   </objectgroup>
+  </tile>
   <tile id="4">
    <objectgroup draworder="index">
-    <object id="0" x="0.375" y="0.125" width="255.25" height="102.875"/>
+    <object id="0" x="0.0222222" y="0" width="255.933" height="97.4545"/>
+   </objectgroup>
+  </tile>
+  <tile id="7">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0" width="250.812" height="96.9091"/>
    </objectgroup>
   </tile>
   <tile id="8">
    <objectgroup draworder="index">
-    <object id="0" x="15.2727" y="0" width="240.51" height="101.091"/>
+    <object id="0" x="15.2727" y="0" width="240.696" height="101.091"/>
+   </objectgroup>
+  </tile>
+  <tile id="12">
+   <objectgroup draworder="index">
+    <object id="0" x="10.75" y="0" width="245.163" height="98.25"/>
+   </objectgroup>
+  </tile>
+  <tile id="13">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0625" y="0.0222222" width="250.312" height="96.7278"/>
    </objectgroup>
   </tile>
   <tile id="14">
@@ -109,7 +153,7 @@
  </tileset>
  <layer name="Background" width="200" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt2SEVADAMQ8HaGh2qf0VzMNiC3Cn4NC9VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkOdsBwAAADHudgAAABDD/gAAAKb0dgAAABDD/wEAAEyxPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+HgIRAYo=
+   eJzt2bENACAMA0HWoqChYv+J2IAyRsrdBN9aHgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+sdIBAABAGzMdAAAAtLHTAQAAQBv2BwAAUOWkAwAAgDb8HwAAQBX7AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODtAg20Acc=
   </data>
  </layer>
  <layer name="Spikes" width="200" height="100">
@@ -119,7 +163,7 @@
  </layer>
  <layer name="Terrain" width="200" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt3TFPFEEYBuCNKCRKY6U2SIEmJEIlFIoFhfT8I3+6IcZ4+SB8fMzM3q73PN2bveOGI4F5d2a4aQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYJe8D3l/5ucDAAC742PILxvzq+YRAUt1HfKPkL9P06/NfDV0NAAA9x1sewAAAMDOOgj3R6HiQ8iHST4eNxQAAFao9bzJi14DAYCBbsL9t5/uxwFsRev5k+p5k6vw+z7uV//m7wEAAAAAAAArkp0fOZ5pHPzxLuS4nzLLb/sOBwAAVmU/7N+rzqdjnvvzdLLzVb3zUcifivl14+v7vCIAANZsL/SP1s/T2eswpoqTkKt9IOsHvR8f+0v2/Hh97vcX4KluG68D8Dy91xNG5zcL//8F2fuZrUdk16v9ofr83n1G/wAAYFN2P756/7v6+JjPQz5beN+I4vrMY9/vUXL972Oe+vXuVH8+vV8/5s8TAAD8U5kvP5Sr9+tjjn3jS2PfOAv59P7Xf/T1R+fq+zN3P+n9+icr648Ad+y9Ahgn9o9sPlydL8f5aTY/vxg8X836STW39pnW8x+j+0jr+or1D+B/9VBHcaYEIBf7R+t+q2rfyHJcD1nafqzLkEevj1T7Qet5kdb+o38A22bOD7As2fmP6n6d3vuVltY3oq8hj96vlfW93usZrf3F/isAADbF/tF6Xrx3ror7q7Z93mN0Hxl9fnzXz3/8Bk2rMh8=
+   eJzt3cFOFEEQBuCJKCTqxRNyAQ5oYiKegINy4QB338hHN8QYN+WGouzu2Rn3+26V2dnpXRLof7qLmSYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbJ+1Afznw+AACwP85C/bKxftU8ImCp7pLj36bpx2Z9O24oAABbHe16AAAAwN46CvdHoeIk1G+T+nzcUAAAWKHWfpMXvQYCAAM9hPtv9+7HAexEa/9Jtd/kNvy+j/vVv/p7AAAAAAAAwIpk/SPnM42DX45DHfdTZvW7vsMBAIBVOQz796rz6VjP/TydrL+qd30a6g/F+nXj9T2vCACANTsI+aP1eToHHcZUcRHqah7I8kHv18f8kp0fj8/9/QI81/fG4wD8m97rCaPrNwv//wXZ95mtR2THq/mhen7vPCN/AACwKbsfX73/XX19rL+E+nLheSOK6zNPfd7T5Pjv1zz3/R5Vfz69rx/rjxMAAPxRmS9vq6v362Md88bnxrxxGepPf7//k9cfXVe/n7nzSe/rX6wsPwI8svcKYJyYP7L5cHW+HOen2fz8evB8Ncsn1bo1z7T2f4zOI63rK9Y/gP/VtoyipwQgF/NH636rat7I6rgesrT9WDehHr0+Us0Hrf0irflH/gB2zZwfYFmy/o/qfp3e+5WWljeiq1CP3q+V5b3e6xmt+cX+KwAANsX80dov3ruuivurdt3vMTqPjO4f3/f+j59CCDHi
   </data>
  </layer>
  <layer name="Cave" width="200" height="100" visible="0">
