@@ -18,7 +18,7 @@ public class LadderZone : MonoBehaviour {
         //check to see if player is touching a ladder and presses up
         if (touchingLadder)
         {
-            if (Input.GetButtonDown("Vertical"))
+            if (Input.GetAxisRaw("Vertical") != 0)
             {
                 thePlayer.ladderClimb(new Vector2(transform.position.x, transform.position.y));
             }
