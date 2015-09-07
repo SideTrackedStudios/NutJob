@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="200" height="100" tilewidth="64" tileheight="64" nextobjectid="1">
  <properties>
-  <property name="unity:scale" value="0.005"/>
+  <property name="unity:scale" value="0.007"/>
  </properties>
  <tileset firstgid="1" name="ground_tiles" tilewidth="256" tileheight="256" spacing="2" margin="2" tilecount="35">
   <image source="../Sprites/Environment/Tiles/ground_tiles.png" width="1808" height="1292"/>
@@ -28,6 +28,11 @@
   <tile id="5">
    <objectgroup draworder="index">
     <object id="0" x="0" y="0" width="255.909" height="255.938"/>
+   </objectgroup>
+  </tile>
+  <tile id="6">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0" width="255.727" height="119.727"/>
    </objectgroup>
   </tile>
   <tile id="10">
@@ -94,9 +99,19 @@
     <object id="0" x="0.0909091" y="0.0909091" width="255.636" height="255.727"/>
    </objectgroup>
   </tile>
+  <tile id="6">
+   <objectgroup draworder="index">
+    <object id="0" x="0.125" y="0.125" width="255.625" height="255.75"/>
+   </objectgroup>
+  </tile>
   <tile id="10">
    <objectgroup draworder="index">
     <object id="0" x="0.181818" y="0.181818" width="255.727" height="255.545"/>
+   </objectgroup>
+  </tile>
+  <tile id="12">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0.0625" width="255.875" height="255.875"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -166,7 +181,12 @@
    eJzt3cFOFEEQBuCJKCTqxRNyAQ5oYiKegINy4QB338hHN8QYN+WGouzu2Rn3+26V2dnpXRLof7qLmSYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbJ+1Afznw+AACwP85C/bKxftU8ImCp7pLj36bpx2Z9O24oAABbHe16AAAAwN46CvdHoeIk1G+T+nzcUAAAWKHWfpMXvQYCAAM9hPtv9+7HAexEa/9Jtd/kNvy+j/vVv/p7AAAAAAAAwIpk/SPnM42DX45DHfdTZvW7vsMBAIBVOQz796rz6VjP/TydrL+qd30a6g/F+nXj9T2vCACANTsI+aP1eToHHcZUcRHqah7I8kHv18f8kp0fj8/9/QI81/fG4wD8m97rCaPrNwv//wXZ95mtR2THq/mhen7vPCN/AACwKbsfX73/XX19rL+E+nLheSOK6zNPfd7T5Pjv1zz3/R5Vfz69rx/rjxMAAPxRmS9vq6v362Md88bnxrxxGepPf7//k9cfXVe/n7nzSe/rX6wsPwI8svcKYJyYP7L5cHW+HOen2fz8evB8Ncsn1bo1z7T2f4zOI63rK9Y/gP/VtoyipwQgF/NH636rat7I6rgesrT9WDehHr0+Us0Hrf0irflH/gB2zZwfYFmy/o/qfp3e+5WWljeiq1CP3q+V5b3e6xmt+cX+KwAANsX80dov3ruuivurdt3vMTqPjO4f3/f+j59CCDHi
   </data>
  </layer>
- <layer name="Cave" width="200" height="100" visible="0">
+ <layer name="Ladder" width="200" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt10ERACAMBLHzR0UhHRcUpomC/W4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/G51BwAAAGNUsrsbAACAGfwHAABwS3UHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzuABMNAjA=
+  </data>
+ </layer>
+ <layer name="Cave" width="200" height="100">
   <data encoding="base64" compression="zlib">
    eJzt1zEKgDAQRcGcxM7GInj/09mGBRFcNJrMNOGn2vaVAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADCHNbkBAADOLGHX5N7SFwEAAKPI9sXV3u8cBQAADOPp5ogbAACY19v9oWcAAIBWDW/8/8oGAAD+q3dP6A8AAJiHPqCnA+TICx0=
   </data>
