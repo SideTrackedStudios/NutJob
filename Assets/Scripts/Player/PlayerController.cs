@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
 	{
 		onLadder = true;
 
-		transform.position = new Vector2(myBody.position.x, myBody.position.y);
+		transform.position = new Vector2(ladderPos.x, myBody.position.y);
 		myAnimator.SetBool("onLadder", true);
 	}
 
