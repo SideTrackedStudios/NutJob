@@ -55,8 +55,11 @@ public class PlayerController : MonoBehaviour
 			isGrounded = false;
 			myBody.gravityScale = 0f;
 			climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
-			myBody.velocity = new Vector2(myBody.velocity.x, climbVelocity);
-		}
+            myBody.velocity = new Vector2(myBody.velocity.x, climbVelocity);
+
+            //update the animator parameter member with my speed
+            myAnimator.SetFloat("speed", Mathf.Abs(climbVelocity));
+        }
 		else
 		{
 			myBody.gravityScale = gravityStore;
