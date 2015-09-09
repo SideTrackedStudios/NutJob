@@ -32,10 +32,10 @@ public class CameraMovement : MonoBehaviour {
 				cameraHolder.transform.position = InterpolationLibrary.AccelerationInterpolation(cameraHolder.position, player.position, Time.deltaTime * cameraSpeed, 1);
 				break;
 			case CameraMovementType.Lerp:
-				cameraHolder.transform.position = Vector3.Lerp (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
+				cameraHolder.transform.position = Vector2.Lerp (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
 				break;
 			case CameraMovementType.MoveTowards:
-				cameraHolder.transform.position = Vector3.MoveTowards (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
+				cameraHolder.transform.position = Vector2.MoveTowards (cameraHolder.transform.position, player.position, Time.deltaTime * cameraSpeed);
 				break;
 			case CameraMovementType.Stopped:
 			default:

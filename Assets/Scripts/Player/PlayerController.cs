@@ -50,6 +50,11 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetButtonDown("Jump"))
 			Jump();
 
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Melee();
+        }
+
 		if (onLadder)
 		{
 			isGrounded = false;
@@ -105,6 +110,11 @@ public class PlayerController : MonoBehaviour
 			myAnimator.SetBool("grounded", isGrounded);
 		}                        
 	}
+
+    public void Melee()
+    {
+        myAnimator.SetBool("meleeKnife", true);
+    }
 
 	public void ladderClimb(Vector2 ladderPos)
 	{
